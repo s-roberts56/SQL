@@ -1,0 +1,13 @@
+--Create store inventory database 
+
+CREATE TABLE store (id integer primary key, name text, quantity integer, price integer, color text); 
+
+INSERT INTO store VALUES (1, "tshirt", 5, 12, "white"); 
+INSERT INTO store VALUES (2, "jeans", 10, 30, "blue");
+INSERT INTO store VALUES (3, "trousers", 3,20 , "tan"); 
+INSERT INTO store VALUES (4, "bracelet", 7, 15, "gold");
+INSert INTO store VALUES (5, "ring", 5, 10, "silver");
+
+SELECT * FROM store ORDER BY price asc; 
+
+SELECT SUM(quantity) FROM store 
