@@ -1,0 +1,54 @@
+--Create store inventory database 
+
+CREATE TABLE store 
+    (id integer primary key, 
+    item text, 
+    section text, 
+    quantity integer, 
+    price integer, 
+    color text, 
+    popularity integer); 
+
+INSERT INTO store VALUES(1, "tshirt", "tops", 10, 12, "white", 53);
+INSERT INTO store VALUES (2, "jeans", "pants", 7, 40, "blue", 77);
+INSERT INTO store VALUES (3, "trousers", "pants", 3, 50, "tan", 44); 
+INSERT INTO store VALUES (4, "bracelet", "accessories", 7, 15, "gold", 35); 
+INSERT INTO store VALUES (5, "ring", "accessories", 8, 10, "silver", 36);
+INSERT INTO store VALUES (6, "sun dress", "dress", 2, 60, "pink", 87); 
+INSERT INTO store VALUES (7, "maxi dress", "dress", 3, 70, "blue", 78); 
+INSERT INTO store VALUES (8, "linen shorts", "pants", 8, 35, "white", 98); 
+INSERT INTO store VALUES (9, "claw clip", "accessories", 17, 5, "multi", 83); 
+INSERT INTO store VALUES (10, "bikini", "swim", 8, 30, "yellow", 88); 
+INSERT INTO store VALUES (11, "one piece", "swim", 6, 40, "black", 63); 
+INSERT INTO store VALUES (12, "swim coverup", "swim", 12, 35, "white", 37); 
+INSERT INTO store VALUES (13, "crop top", "tops", 7, 18, "red", 72); 
+INSERT INTO store VALUES (14, "converse", "shoes", 2, 70, "white", 88);
+Insert INTO store VALUEs (15, "sandals", "shoes", 3, 55, "tan", 70); 
+
+--Display the database ordered by price.
+
+SELECT * FROM store
+ORDER BY price asc;
+
+--What is the total price of all the items in each section? 
+
+SELECT section, SUM(price) FROM store
+GROUP BY section;
+
+--What is the average price of clothing in each section? 
+
+SELECT section, AVG(price) FROM store 
+GROUP BY section;
+
+--what is the average quantity of dresses in the store? 
+
+SELECT AVG(quantity) FROM store
+WHERE section = "dress"; 
+
+--what are the five most popular items? 
+
+SELECT item, price, quantity, popularity 
+FROM store
+ORDER BY popularity desc
+LIMIT 5; 
+
