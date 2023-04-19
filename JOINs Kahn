@@ -1,0 +1,30 @@
+CREATE TABLE movie_stars (id INTEGER PRIMARY KEY AUTOINCREMENT, name TEXT, movie_title TEXT, genre TEXT, rating INTEGER); 
+
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Brad Pitt", "Thelma & Louise", "adventure", 7.5);
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES("Channing Tatum", "Step Up", "drama", 6.5);
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Jenna Dewan", "Step Up", "drama", 6.5);
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Jennifer Garner", "13 Going on 30", "rom-com", 6.5);
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Ben Afflek", "Gone Girl", "mystery", 8.1);
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Mila Kunis", "Friends with Benefits", "rom-com", 6.5); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Ashton Kutcher", "Your Place or Mine", "rom-com", 5.6); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Angelina Jolie", "Tomb Raider", "adventure", 5.7); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Tom Cruise", "Top Gun", "action", 6.9); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Nicole Kidman", "Bewitched", "rom-com", 4.8); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Miley Cyrus", "Last Song", "drama", 6); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Liam Hemsworth", "Hunger Games", "action", 7.2);
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Chad Michael Murray", "A Cinderella Story", "rom-com", 5.9); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Sophia Bush", "John Tucker Must Die", "rom-com", 5.7); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Ryan Reynolds", "Deadpool", "action", 8); 
+INSERT INTO movie_stars (name, movie_title, genre, rating) VALUES ("Blake Lively", "Sisterhood of the Traveling Pants", "drama", 6.5)
+
+
+CREATE TABLE celebrity_couples (id INTEGER PRIMARY KEY, name TEXT, spouse TEXT, years_married INTEGER);
+
+INSERT INTO celebrity_couples VALUES (1, "Brad Pitt", "Angelina Jolie", 2); 
+INSERT INTO celebrity_couples VALUES (2, "Channing Tatum", "Jenna Dewan", 10);
+INSERT INTO celebrity_couples VALUES (3, "Ben Affleck", "Jennifer Garner", 10); 
+INSERT INTO celebrity_couples VALUES (4, "Liam Hemsworth", "Miley Cyrus", 2); 
+INSERT INTO celebrity_couples VALUES (5, "Chad Michael Murray", "Sophia Bush", 0.5);
+INSERT INTO celebrity_couples VALUES (6, "Ryan Reynolds", "Blake Lively", 11); 
+INSERT INTO celebrity_couples VALUES (7, "Ashton Kutcher", "Mila Kunis", 8); 
+INSERT INTO celebrity_couples VALUES (8, "Tom Cruise", "Nicole Kidman", 10); 
